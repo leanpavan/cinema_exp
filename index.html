@@ -1,87 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Absolute Cinema</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
 </head>
 <body>
-    <div class="title">
-        
-    </div>    
-    <div class="navbar">
-        <a class="title">Absolute Cinema</a>
-        <a class="active" href="#home">Home</a>
-        <a href="#about">Sobre</a>
-        <a href="#screening">Programação</a>
-    </div>
-    
-    <div class="home">
-        <p></p>
-    </div>
+      <nav class="navbar">    
+        <div class="topnav">
+            <a id="titulo" class="navbar-brand title" href="#home">Absolute Cinema</a>
+            <a href="#member">Membro</a>
+            <a href="#prices">Preços</a>
+            <a href="#showing">Catálogo</a>
+            <a class="active" href="#home">Home</a>
+        </div>
+    </nav>
 
-    <div class="container" id="screening">
-        <ul class="oppenheimer">
-            <img src="images/oppenheimer.webp" alt="Oppenheimer Dir. Cristopher Nolan" class="poster">
-            <div class="overlay">
-                <div class="text">Saiba Mais</div>
+    <!--Go To Top Button-->
+    <button onclick="goToHeader()" class="botao-flutuante scroll-top" id="botao-topo">&#8679</button>
+
+    <!--Page-->
+    <div class="home">
+        <div id="about" class="about">
+            <h2>Bem-vindo ao Absolute Cinema</h2> 
+            <p>Sua plataforma única para a compra de ingressos com os melhores preços!</p>
+        </div>
+    </div><!--home-->
+        <div  class="catalogo">
+        <h1>Catálogo de Filmes</h1>
+        <div class="container">
+            
+            <div class="movie">
+                <a href="https://www.youtube.com/watch?v=bK6ldnjE3Y0" target="_blank">
+                    <img src="images/oppenheimer.webp" alt="Oppenheimer">
+                </a>       
+                <div class="movie-info">
+                    <h2 class="movie-title">Oppenheimer</h2>
+                </div>
             </div>
-            <li>Oppenheimer</li>
-        </ul>
-        <ul class="jujutsu">
-            <img src="images/jujutsu.webp" alt="Jujutsu Kaisen 0" class="poster">
-            <li>Jujutsu Kaisen 0</li>
-        </ul>
-        <ul class="hereditario">
-            <img src="images/hereditario.jpg" alt="Hereditário" class="poster">
-            <li>Hereditário</li>
-        </ul>
-        <ul class="oppenheimer">
-            <img src="images/oppenheimer.webp" alt="Oppenheimer Dir. Cristopher Nolan" class="poster">
-            <div class="overlay">
-                <a href="https://www.youtube.com/watch?v=8RLVtz-chU8" class="text">Saiba Mais</a>
+            <div class="movie">
+                <a href="https://www.youtube.com/watch?v=GV5y4yTDtBI" target="_blank">
+                    <img src="images/garfield.jpg" alt="Garfield">
+                </a>
+                <div class="movie-info">
+                    <h2 class="movie-title">Garfield: O Filme</h2>
+                </div>
             </div>
-            <li>Oppenheimer</li>
-        </ul>
-        <ul class="jujutsu">
-            <img src="images/jujutsu.webp" alt="Jujutsu Kaisen 0" class="poster">
-            <li>Jujutsu Kaisen 0</li>
-        </ul>
-        <ul class="hereditario">
-            <img src="images/hereditario.jpg" alt="Hereditário" class="poster">
-            <li>Hereditário</li>
-        </ul>
-        <ul class="oppenheimer">
-            <img src="images/oppenheimer.webp" alt="Oppenheimer Dir. Cristopher Nolan" class="poster">
-            <div class="overlay">
-                <div class="text">Saiba Mais</div>
+            <div class="movie">
+                <a href="https://www.youtube.com/watch?v=V6wWKNij_1M" target="_blank">
+                    <img src="images/hereditario.jpg" alt="Hereditário">
+                </a>       
+                <div class="movie-info">
+                    <h2 class="movie-title">Hereditário</h2>
+                </div>
             </div>
-            <li>Oppenheimer</li>
-        </ul>
-        <ul class="jujutsu">
-            <img src="images/jujutsu.webp" alt="Jujutsu Kaisen 0" class="poster">
-            <li>Jujutsu Kaisen 0</li>
-        </ul>
-        <ul class="hereditario">
-            <img src="images/hereditario.jpg" alt="Hereditário" class="poster">
-            <li>Hereditário</li>
-        </ul>
-        <ul class="oppenheimer">
-            <img src="images/oppenheimer.webp" alt="Oppenheimer Dir. Cristopher Nolan" class="poster">
-            <div class="overlay">
-                <div class="text">Saiba Mais</div>
+            <div class="movie">
+                <a href="https://www.youtube.com/watch?v=hebqhXBM5p0" target="_blank">
+                    <img src="images/jujutsu.webp" alt="Jujutsu Kaisen 0">
+                </a>
+                <div class="movie-info">
+                    <h2 class="movie-title">Jujutsu Kaisen 0</h2>
+                </div>
             </div>
-            <li>Oppenheimer</li>
-        </ul>
-        <ul class="jujutsu">
-            <img src="images/jujutsu.webp" alt="Jujutsu Kaisen 0" class="poster">
-            <li>Jujutsu Kaisen 0</li>
-        </ul>
-        <ul class="hereditario">
-            <img src="images/hereditario.jpg" alt="Hereditário" class="poster">
-            <li>Hereditário</li>
-        </ul>
+            <div class="movie">
+                <a href="https://www.youtube.com/watch?v=zZNC5emNyEQ" target="_blank">
+                    <img src="images/Click_film.jpg" alt="Click">
+                </a>
+                <div id="row2" class="movie-info">
+                    <h2 class="movie-title">Click</h2>
+                </div>
+            </div>
+
+            <div class="movie">
+                <a href="https://www.youtube.com/watch?v=r8pJt4dK_s4" target="_blank">
+                    <img src="images/emoji.webp" alt="emoji">
+                </a>
+                <div id="row2" class="movie-info">
+                    <h2 class="movie-title">Emoji</h2>
+                </div>
+            </div>
+
+            <div class="movie">
+                <a href="https://www.youtube.com/watch?v=gCcx85zbxz4" target="_blank">
+                    <img src="images/bladerunner.webp" alt="Blade Runner">
+                </a>
+                <div id="row2" class="movie-info">
+                    <h2 class="movie-title">Blade Runner</h2>
+                </div>
+            </div>
+
+            <div class="movie">
+                <a href="https://www.youtube.com/watch?v=7d_jQycdQGo" target="_blank">
+                    <img src="images/whiplash.jpg" alt="Whiplash">
+                </a>
+                <div id="row2" class="movie-info">
+                    <h2 class="movie-title">Whiplash</h2>
+                </div>
+            </div>
+        </div><!--showing-->
+    </div> <!--Catalogo-->
     </div>
+    <hr>
+    <div id="prices" class="tables">
+        <h2>Preços</h2>
+        <table class="pricing">
+            <tr class="coluns">
+                <th>Cinema</th>
+                <th>IMAX</th>
+                <th>2D</th>
+                <th>3D</th>
+                <th>Preço</th>
+            </tr>
+            <tr>
+                <td>Cinemark</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>R$24,00 / R$12,00</td>
+            </tr>
+            <tr>
+                <td>UCI Palladium</td>
+                <td>✔</td>
+                <td>✔</td>
+                <td>X</td>
+                <td>R$32,00 / R$16,00</td>
+            </tr>
+            <tr>
+                <td>Cinépolis Batel</td>
+                <td>X</td>
+                <td>X</td>
+                <td>✔</td>
+                <td>R$36,00 / R$18,00</td>
+            </tr>
+        </table>
+        <hr>
+    </div><!--prices-->
+
+    <h2 id="member" class="vantagem">Vantagens para Membros VIP</h2>
+    <div class="seja-membro">
+        
+        <ul>
+            <li>
+            <span class="member-title">Desconto Exclusivo:</span> Membros VIP recebem 20% de desconto em todos os ingressos.
+            </li>
+            <li>
+            <span class="member-title">Acesso Prioritário:</span> Membros VIP têm acesso prioritário às melhores poltronas do cinema.
+            </li>
+            <li>
+            <span class="member-title">Brindes Especiais:</span> Receba brindes exclusivos em dias especiais, como pôsteres autografados e brinquedos colecionáveis.
+            </li>
+            <li>
+            <span class="member-title">Convites para Eventos VIP:</span> Participe de eventos especiais exclusivos para membros VIP, como pré-estreias e encontros com elenco.
+            </li>
+            <li>
+            <span class="member-title">Ofertas Especiais em Concessões:</span> Desfrute de ofertas especiais em combos de pipoca e refrigerante apenas para membros VIP.
+            </li>
+        </ul>
+    </div><!--seja-membro-->
+
+    
+    
 </body>
 </html>

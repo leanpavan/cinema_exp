@@ -1,0 +1,212 @@
+* {
+    box-sizing: border-box;
+    font-family: "GODOFWAR";
+}
+body {
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+
+nav {
+    border-bottom: solid 1px #fff;
+    display: block;
+    max-width: 100%;
+}
+
+.navbar-brand {
+    color: antiquewhite;
+    
+}
+
+.topnav .title {
+  float: left;
+}
+
+.topnav {
+    background-color: black;
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .topnav a:first-child:hover{
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    font-size: 28px;
+}
+
+.topnav a:first-child{
+    font-size: 28px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+body .home{
+    background-image: url(images/Cinema-Cultura.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 100%;
+    z-index: -1;
+    margin-bottom: 40px;
+}
+
+.catalogo h1{
+    z-index: 4;
+    margin-top: 100px;
+    color: rgb(201, 190, 190);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace; 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+    padding: 0 20px;
+}
+.movie {
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.movie img {
+    width: 100%;
+    height: auto;
+    display: block;
+    height: 435px;
+}
+.movie-info {
+    padding: 10px;
+    color: antiquewhite;
+}
+.movie-title {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+#row2 h2{
+    color: white;
+}
+
+.tables h2 {
+    margin-left: 10px;
+}
+
+.tables{ 
+    color: antiquewhite;
+}
+
+table, th, td{
+    border: 1px solid;
+    width: 30%;
+    padding: 15px;
+    text-align: left;
+}
+
+hr {
+    margin: 80px 0px;
+}
+
+.tables .pricing{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    width: 700px;
+    text-align: center !important;
+}
+
+.tables h2{
+    text-align: center;
+}
+
+img .icon{
+    height: -55px;
+}
+
+
+.about {
+    color: antiquewhite;
+    text-align: center;
+    font-size: 20px;
+    margin: 50px;
+}
+
+.unidades{
+    color: white;
+}
+
+.seja-membro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 700px;
+  }
+
+  li {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: wheat;
+  }
+
+  .member-title {
+    font-weight: bold;
+  }
+
+  .vantagem {
+    color: rgb(112, 17, 17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .botao-flutuante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(112, 17, 17);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  .botao-flutuante:hover {
+    background-color: rgb(145, 9, 9);
+  }
+
+  .scroll-top {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s, visibility 0.4s;
+  }
+
+  .scroll-top.mostrar {
+    opacity: 1;
+    visibility: visible;
+  }

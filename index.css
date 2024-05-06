@@ -6,17 +6,17 @@ body {
     font-family: sans-serif;
     margin: 0px;
     padding: 0px;
-    background-color: black;
+    background-color: white;
 }
 
 nav {
-    border-bottom: solid 1px #fff;
+    border-bottom: solid 1px black;
     display: block;
     max-width: 100%;
 }
 
 .navbar-brand {
-    color: antiquewhite;
+    color: black;
     
 }
 
@@ -25,13 +25,13 @@ nav {
 }
 
 .topnav {
-    background-color: black;
+    background-color: white;
     overflow: hidden;
   }
   
   .topnav a {
     float: right;
-    color: #f2f2f2;
+    color:  black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -40,7 +40,7 @@ nav {
   
   .topnav a:first-child:hover{
     background-color: rgba(255, 255, 255, 0);
-    color: white;
+    color: black;
     font-size: 28px;
 }
 
@@ -49,7 +49,7 @@ nav {
 }
 
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: rgb(112, 17, 17);
     color: black;
   }
 
@@ -66,7 +66,7 @@ body .home{
 .catalogo h1{
     z-index: 4;
     margin-top: 100px;
-    color: rgb(201, 190, 190);
+    color: black;
     text-align: center;
     font-family: 'Courier New', Courier, monospace; 
 }
@@ -109,7 +109,7 @@ body .home{
 }
 
 .tables{ 
-    color: antiquewhite;
+    color: black;
 }
 
 table, th, td{
@@ -133,6 +133,7 @@ hr {
 
 .tables h2{
     text-align: center;
+    color: rgb(112, 17, 17);
 }
 
 img .icon{
@@ -148,7 +149,7 @@ img .icon{
 }
 
 .unidades{
-    color: white;
+    color: black;
 }
 
 .seja-membro{
@@ -165,9 +166,9 @@ ul {
 
   li {
     margin-bottom: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     padding: 10px;
-    color: wheat;
+    color: black;
   }
 
   .member-title {
